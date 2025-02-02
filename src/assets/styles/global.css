@@ -1,0 +1,136 @@
+/* Global styles */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+html, body {
+  background-color: #242424;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+}
+
+/* Base styles */
+body {
+  margin: 0;
+  min-width: 20rem;
+  min-height: 100vh;
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 0.5rem;
+  border: 0.0625rem solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 0.25rem auto -webkit-focus-ring-color;
+}
+
+/* Login styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+  background: linear-gradient(135deg, #1890ff 0%, #69c0ff 100%);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 30rem;
+  min-width: 20rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem 0;
+}
+
+.login-card .ant-card-head-title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1890ff;
+  margin-bottom: 2rem;
+}
+
+.login-card .ant-form {
+  padding: 0 3rem;
+}
+
+.login-card .ant-input-affix-wrapper {
+  border-radius: 0.5rem;
+  height: 3rem;
+}
+
+.login-card .ant-input {
+  font-size: 1rem;
+}
+
+.login-card .ant-btn {
+  height: 3rem;
+  font-size: 1.125rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
